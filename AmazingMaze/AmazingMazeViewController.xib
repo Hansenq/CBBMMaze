@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmazingMazeViewController">
+            <connections>
+                <outlet property="exit" destination="CUX-Lj-Ojr" id="F6x-b4-A96"/>
+                <outlet property="ghost1" destination="fbF-Cq-POR" id="P3L-HS-0x9"/>
+                <outlet property="ghost2" destination="Coo-xf-EHq" id="Hwz-iy-d78"/>
+                <outlet property="ghost3" destination="4qR-Yw-P6E" id="IxK-zr-dL8"/>
+                <outlet property="ghost4" destination="KZd-O6-xaR" id="bCu-Kv-suV"/>
+                <outlet property="pacman" destination="chy-MS-gkC" id="qqo-gK-DLv"/>
+                <outlet property="view" destination="6Z6-0E-QyB" id="Wkb-ic-VJi"/>
+                <outletCollection property="wall" destination="DsF-ro-0Gg" id="DYF-a7-sj8"/>
+                <outletCollection property="wall" destination="jKa-kD-Rg5" id="QcR-LP-8Iz"/>
+                <outletCollection property="wall" destination="gmp-9d-NSm" id="X6j-8M-nCA"/>
+                <outletCollection property="wall" destination="U5q-sh-rFd" id="jq0-7N-rT6"/>
+                <outletCollection property="wall" destination="uB4-wJ-C3A" id="680-HB-MUr"/>
+                <outletCollection property="wall" destination="31V-uJ-afB" id="LpH-1H-x5m"/>
+                <outletCollection property="wall" destination="acs-Bl-GPQ" id="x5W-Fn-PZf"/>
+                <outletCollection property="wall" destination="ZJd-1O-e6G" id="fXR-Qa-3f0"/>
+                <outletCollection property="wall" destination="UHj-2s-UiE" id="799-QZ-lwO"/>
+                <outletCollection property="wall" destination="YEk-si-EdC" id="dlu-EQ-psz"/>
+                <outletCollection property="wall" destination="GTt-Jf-ugV" id="lfp-dK-or7"/>
+                <outletCollection property="wall" destination="gAp-qD-D08" id="yXz-eW-ucB"/>
+                <outletCollection property="wall" destination="ZU3-DA-7j6" id="5ym-qZ-EAk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6Z6-0E-QyB">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="U5q-sh-rFd">
+                    <rect key="frame" x="0.0" y="271" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="31V-uJ-afB">
+                    <rect key="frame" x="256" y="130" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-9d-NSm">
+                    <rect key="frame" x="84" y="76" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-kD-Rg5">
+                    <rect key="frame" x="42" y="38" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pacman1.png" translatesAutoresizingMaskIntoConstraints="NO" id="chy-MS-gkC">
+                    <rect key="frame" x="11" y="166" width="40" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pacman2.png" translatesAutoresizingMaskIntoConstraints="NO" id="4qR-Yw-P6E">
+                    <rect key="frame" x="203" y="272" width="40" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost1.png" translatesAutoresizingMaskIntoConstraints="NO" id="fbF-Cq-POR">
+                    <rect key="frame" x="244" y="0.0" width="40" height="46"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Coo-xf-EHq">
+                    <rect key="frame" x="452" y="0.0" width="40" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ghost3.png" translatesAutoresizingMaskIntoConstraints="NO" id="KZd-O6-xaR">
+                    <rect key="frame" x="365" y="272" width="40" height="48"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="DsF-ro-0Gg">
+                    <rect key="frame" x="0.0" y="0.0" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="UHj-2s-UiE">
+                    <rect key="frame" x="283" y="280" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="YEk-si-EdC">
+                    <rect key="frame" x="419" y="120" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="GTt-Jf-ugV">
+                    <rect key="frame" x="445" y="166" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="gAp-qD-D08">
+                    <rect key="frame" x="513" y="271" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="acs-Bl-GPQ">
+                    <rect key="frame" x="208" y="158" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJd-1O-e6G">
+                    <rect key="frame" x="309" y="158" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZU3-DA-7j6">
+                    <rect key="frame" x="336" y="0.0" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nan.png" translatesAutoresizingMaskIntoConstraints="NO" id="uB4-wJ-C3A">
+                    <rect key="frame" x="167" y="190" width="55" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="butterChicken.png" translatesAutoresizingMaskIntoConstraints="NO" id="CUX-Lj-Ojr">
+                    <rect key="frame" x="508" y="128" width="60" height="54"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="butterChicken.png" width="60" height="54"/>
+        <image name="ghost1.png" width="40" height="46"/>
+        <image name="ghost2.png" width="40" height="45"/>
+        <image name="ghost3.png" width="40" height="48"/>
+        <image name="nan.png" width="55" height="49"/>
+        <image name="pacman1.png" width="40" height="44"/>
+        <image name="pacman2.png" width="40" height="49"/>
+    </resources>
+</document>

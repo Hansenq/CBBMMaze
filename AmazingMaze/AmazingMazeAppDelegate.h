@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class AmazingMazeViewController;
+
 @interface AmazingMazeAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) AmazingMazeViewController *amvc;
 
 @end

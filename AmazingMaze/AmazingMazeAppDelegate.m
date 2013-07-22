@@ -7,12 +7,20 @@
 //
 
 #import "AmazingMazeAppDelegate.h"
+#import "AmazingMazeViewController.h"
 
 @implementation AmazingMazeAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    self.amvc = [[AmazingMazeViewController alloc] initWithNibName:@"AmazingMazeViewController" bundle:nil];
+    self.window.rootViewController = self.amvc;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							
