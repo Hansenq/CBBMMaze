@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		201CD4D7179D9F0E002398DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4D6179D9F0E002398DB /* Foundation.framework */; };
+		201CD4D9179D9F0E002398DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4D8179D9F0E002398DB /* CoreGraphics.framework */; };
+		201CD4DB179D9F0E002398DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4DA179D9F0E002398DB /* UIKit.framework */; };
+		201CD4DD179D9F0E002398DB /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4DC179D9F0E002398DB /* SpriteKit.framework */; };
+		201CD4E3179D9F0E002398DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 201CD4E1179D9F0E002398DB /* InfoPlist.strings */; };
+		201CD4E5179D9F0E002398DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CD4E4179D9F0E002398DB /* main.m */; };
+		201CD4E9179D9F0E002398DB /* AmazingMazeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CD4E8179D9F0E002398DB /* AmazingMazeAppDelegate.m */; };
+		201CD4EC179D9F0E002398DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 201CD4EA179D9F0E002398DB /* Main.storyboard */; };
+		201CD4EF179D9F0E002398DB /* AmazingMazeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CD4EE179D9F0E002398DB /* AmazingMazeViewController.m */; };
+		201CD4F2179D9F0E002398DB /* AmazingMazeMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CD4F1179D9F0E002398DB /* AmazingMazeMyScene.m */; };
+		201CD4F4179D9F0E002398DB /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 201CD4F3179D9F0E002398DB /* Spaceship.png */; };
+		201CD4F6179D9F0E002398DB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201CD4F5179D9F0E002398DB /* Images.xcassets */; };
+		201CD4FD179D9F0E002398DB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4FC179D9F0E002398DB /* XCTest.framework */; };
+		201CD4FE179D9F0E002398DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4D6179D9F0E002398DB /* Foundation.framework */; };
+		201CD4FF179D9F0E002398DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 201CD4DA179D9F0E002398DB /* UIKit.framework */; };
+		201CD507179D9F0E002398DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 201CD505179D9F0E002398DB /* InfoPlist.strings */; };
+		201CD509179D9F0E002398DB /* AmazingMazeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 201CD508179D9F0E002398DB /* AmazingMazeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		201CD500179D9F0E002398DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 201CD4CB179D9F0E002398DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 201CD4D2179D9F0E002398DB;
+			remoteInfo = AmazingMaze;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		201CD4D3179D9F0E002398DB /* AmazingMaze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingMaze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		201CD4D6179D9F0E002398DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		201CD4D8179D9F0E002398DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		201CD4DA179D9F0E002398DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		201CD4DC179D9F0E002398DB /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		201CD4E0179D9F0E002398DB /* AmazingMaze-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazingMaze-Info.plist"; sourceTree = "<group>"; };
+		201CD4E2179D9F0E002398DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		201CD4E4179D9F0E002398DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		201CD4E6179D9F0E002398DB /* AmazingMaze-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AmazingMaze-Prefix.pch"; sourceTree = "<group>"; };
+		201CD4E7179D9F0E002398DB /* AmazingMazeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingMazeAppDelegate.h; sourceTree = "<group>"; };
+		201CD4E8179D9F0E002398DB /* AmazingMazeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingMazeAppDelegate.m; sourceTree = "<group>"; };
+		201CD4EB179D9F0E002398DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		201CD4ED179D9F0E002398DB /* AmazingMazeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingMazeViewController.h; sourceTree = "<group>"; };
+		201CD4EE179D9F0E002398DB /* AmazingMazeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingMazeViewController.m; sourceTree = "<group>"; };
+		201CD4F0179D9F0E002398DB /* AmazingMazeMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazingMazeMyScene.h; sourceTree = "<group>"; };
+		201CD4F1179D9F0E002398DB /* AmazingMazeMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingMazeMyScene.m; sourceTree = "<group>"; };
+		201CD4F3179D9F0E002398DB /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		201CD4F5179D9F0E002398DB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		201CD4FB179D9F0E002398DB /* AmazingMazeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingMazeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		201CD4FC179D9F0E002398DB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		201CD504179D9F0E002398DB /* AmazingMazeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AmazingMazeTests-Info.plist"; sourceTree = "<group>"; };
+		201CD506179D9F0E002398DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		201CD508179D9F0E002398DB /* AmazingMazeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazingMazeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201CD4D0179D9F0E002398DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD4D9179D9F0E002398DB /* CoreGraphics.framework in Frameworks */,
+				201CD4DB179D9F0E002398DB /* UIKit.framework in Frameworks */,
+				201CD4DD179D9F0E002398DB /* SpriteKit.framework in Frameworks */,
+				201CD4D7179D9F0E002398DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201CD4F8179D9F0E002398DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD4FD179D9F0E002398DB /* XCTest.framework in Frameworks */,
+				201CD4FF179D9F0E002398DB /* UIKit.framework in Frameworks */,
+				201CD4FE179D9F0E002398DB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201CD4CA179D9F0E002398DB = {
+			isa = PBXGroup;
+			children = (
+				201CD4DE179D9F0E002398DB /* AmazingMaze */,
+				201CD502179D9F0E002398DB /* AmazingMazeTests */,
+				201CD4D5179D9F0E002398DB /* Frameworks */,
+				201CD4D4179D9F0E002398DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		201CD4D4179D9F0E002398DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201CD4D3179D9F0E002398DB /* AmazingMaze.app */,
+				201CD4FB179D9F0E002398DB /* AmazingMazeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201CD4D5179D9F0E002398DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				201CD4D6179D9F0E002398DB /* Foundation.framework */,
+				201CD4D8179D9F0E002398DB /* CoreGraphics.framework */,
+				201CD4DA179D9F0E002398DB /* UIKit.framework */,
+				201CD4DC179D9F0E002398DB /* SpriteKit.framework */,
+				201CD4FC179D9F0E002398DB /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		201CD4DE179D9F0E002398DB /* AmazingMaze */ = {
+			isa = PBXGroup;
+			children = (
+				201CD4E7179D9F0E002398DB /* AmazingMazeAppDelegate.h */,
+				201CD4E8179D9F0E002398DB /* AmazingMazeAppDelegate.m */,
+				201CD4EA179D9F0E002398DB /* Main.storyboard */,
+				201CD4ED179D9F0E002398DB /* AmazingMazeViewController.h */,
+				201CD4EE179D9F0E002398DB /* AmazingMazeViewController.m */,
+				201CD4F0179D9F0E002398DB /* AmazingMazeMyScene.h */,
+				201CD4F1179D9F0E002398DB /* AmazingMazeMyScene.m */,
+				201CD4F3179D9F0E002398DB /* Spaceship.png */,
+				201CD4F5179D9F0E002398DB /* Images.xcassets */,
+				201CD4DF179D9F0E002398DB /* Supporting Files */,
+			);
+			path = AmazingMaze;
+			sourceTree = "<group>";
+		};
+		201CD4DF179D9F0E002398DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				201CD4E0179D9F0E002398DB /* AmazingMaze-Info.plist */,
+				201CD4E1179D9F0E002398DB /* InfoPlist.strings */,
+				201CD4E4179D9F0E002398DB /* main.m */,
+				201CD4E6179D9F0E002398DB /* AmazingMaze-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		201CD502179D9F0E002398DB /* AmazingMazeTests */ = {
+			isa = PBXGroup;
+			children = (
+				201CD508179D9F0E002398DB /* AmazingMazeTests.m */,
+				201CD503179D9F0E002398DB /* Supporting Files */,
+			);
+			path = AmazingMazeTests;
+			sourceTree = "<group>";
+		};
+		201CD503179D9F0E002398DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				201CD504179D9F0E002398DB /* AmazingMazeTests-Info.plist */,
+				201CD505179D9F0E002398DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201CD4D2179D9F0E002398DB /* AmazingMaze */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201CD50C179D9F0E002398DB /* Build configuration list for PBXNativeTarget "AmazingMaze" */;
+			buildPhases = (
+				201CD4CF179D9F0E002398DB /* Sources */,
+				201CD4D0179D9F0E002398DB /* Frameworks */,
+				201CD4D1179D9F0E002398DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AmazingMaze;
+			productName = AmazingMaze;
+			productReference = 201CD4D3179D9F0E002398DB /* AmazingMaze.app */;
+			productType = "com.apple.product-type.application";
+		};
+		201CD4FA179D9F0E002398DB /* AmazingMazeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201CD50F179D9F0E002398DB /* Build configuration list for PBXNativeTarget "AmazingMazeTests" */;
+			buildPhases = (
+				201CD4F7179D9F0E002398DB /* Sources */,
+				201CD4F8179D9F0E002398DB /* Frameworks */,
+				201CD4F9179D9F0E002398DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				201CD501179D9F0E002398DB /* PBXTargetDependency */,
+			);
+			name = AmazingMazeTests;
+			productName = AmazingMazeTests;
+			productReference = 201CD4FB179D9F0E002398DB /* AmazingMazeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201CD4CB179D9F0E002398DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AmazingMaze;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Catherine Morrison";
+				TargetAttributes = {
+					201CD4FA179D9F0E002398DB = {
+						TestTargetID = 201CD4D2179D9F0E002398DB;
+					};
+				};
+			};
+			buildConfigurationList = 201CD4CE179D9F0E002398DB /* Build configuration list for PBXProject "AmazingMaze" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 201CD4CA179D9F0E002398DB;
+			productRefGroup = 201CD4D4179D9F0E002398DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201CD4D2179D9F0E002398DB /* AmazingMaze */,
+				201CD4FA179D9F0E002398DB /* AmazingMazeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		201CD4D1179D9F0E002398DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD4E3179D9F0E002398DB /* InfoPlist.strings in Resources */,
+				201CD4F6179D9F0E002398DB /* Images.xcassets in Resources */,
+				201CD4F4179D9F0E002398DB /* Spaceship.png in Resources */,
+				201CD4EC179D9F0E002398DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201CD4F9179D9F0E002398DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD507179D9F0E002398DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201CD4CF179D9F0E002398DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD4E5179D9F0E002398DB /* main.m in Sources */,
+				201CD4E9179D9F0E002398DB /* AmazingMazeAppDelegate.m in Sources */,
+				201CD4EF179D9F0E002398DB /* AmazingMazeViewController.m in Sources */,
+				201CD4F2179D9F0E002398DB /* AmazingMazeMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		201CD4F7179D9F0E002398DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201CD509179D9F0E002398DB /* AmazingMazeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		201CD501179D9F0E002398DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 201CD4D2179D9F0E002398DB /* AmazingMaze */;
+			targetProxy = 201CD500179D9F0E002398DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		201CD4E1179D9F0E002398DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201CD4E2179D9F0E002398DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		201CD4EA179D9F0E002398DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201CD4EB179D9F0E002398DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		201CD505179D9F0E002398DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				201CD506179D9F0E002398DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		201CD50A179D9F0E002398DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		201CD50B179D9F0E002398DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201CD50D179D9F0E002398DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingMaze/AmazingMaze-Prefix.pch";
+				INFOPLIST_FILE = "AmazingMaze/AmazingMaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		201CD50E179D9F0E002398DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingMaze/AmazingMaze-Prefix.pch";
+				INFOPLIST_FILE = "AmazingMaze/AmazingMaze-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		201CD510179D9F0E002398DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmazingMaze.app/AmazingMaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingMaze/AmazingMaze-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AmazingMazeTests/AmazingMazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		201CD511179D9F0E002398DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AmazingMaze.app/AmazingMaze";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AmazingMaze/AmazingMaze-Prefix.pch";
+				INFOPLIST_FILE = "AmazingMazeTests/AmazingMazeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201CD4CE179D9F0E002398DB /* Build configuration list for PBXProject "AmazingMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201CD50A179D9F0E002398DB /* Debug */,
+				201CD50B179D9F0E002398DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201CD50C179D9F0E002398DB /* Build configuration list for PBXNativeTarget "AmazingMaze" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201CD50D179D9F0E002398DB /* Debug */,
+				201CD50E179D9F0E002398DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		201CD50F179D9F0E002398DB /* Build configuration list for PBXNativeTarget "AmazingMazeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201CD510179D9F0E002398DB /* Debug */,
+				201CD511179D9F0E002398DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201CD4CB179D9F0E002398DB /* Project object */;
+}
