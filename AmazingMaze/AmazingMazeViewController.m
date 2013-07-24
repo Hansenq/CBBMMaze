@@ -89,13 +89,13 @@
 
 - (void)movePacman
 {
-    [self collisionWithExit];
+    [self checkCollisionWithExit];
     
-    [self collisionWithGhosts];
+    [self checkCollisionWithGhosts];
     
-    [self collisionWithWalls];
+    [self checkCollisionWithWalls];
     
-    [self collisionWithBoundaries];
+    [self checkCollisionWithBoundaries];
     
     self.previousPoint = self.currentPoint;
     
@@ -120,7 +120,7 @@
     [self.pacman.layer addAnimation:rotate forKey:@"10"];
 }
 
-- (void)collisionWithBoundaries
+- (void)checkCollisionWithBoundaries
 {
     if (self.currentPoint.x < 0) {
         _currentPoint.x = 0;
@@ -143,7 +143,7 @@
     }
 }
 
-- (void)collisionWithWalls
+- (void)checkCollisionWithWalls
 {
     CGRect frame = self.pacman.frame;
     frame.origin.x = self.currentPoint.x;
@@ -172,7 +172,7 @@
     }
 }
 
-- (void)collisionWithGhosts
+- (void)checkCollisionWithGhosts
 {
     CALayer *ghostLayer1 = [self.ghost1.layer presentationLayer];
     CALayer *ghostLayer2 = [self.ghost2.layer presentationLayer];
@@ -197,7 +197,7 @@
     
 }
 
-- (void)collisionWithExit
+- (void)checkCollisionWithExit
 {
     if (CGRectIntersectsRect(self.pacman.frame, self.exit.frame)) {
         
@@ -216,6 +216,31 @@
 - (BOOL)shouldAutorotate
 {
     return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+  UITouch *touch = [touches anyObject];
+  CGPoint location = [touch locationInView:[self view]];
+  [[self motionManager] stopAccelerometerUpdates];
+
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+  UITouch *touch = [touches anyObject];
+  CGPoint location = [touch locationInView:[self view]];
+
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+  UITouch *touch = [touches anyObject];
+  CGPoint location = [touch locationInView:[self view]];
+
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+  UITouch *touch = [touches anyObject];
+  CGPoint location = [touch locationInView:[self view]];
+
 }
 
 - (NSUInteger)supportedInterfaceOrientations

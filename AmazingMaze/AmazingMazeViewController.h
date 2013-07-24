@@ -33,5 +33,6 @@
 @property (strong, nonatomic) CMMotionManager  *motionManager;
 @property (strong, nonatomic) NSOperationQueue *queue;
 @property (strong, nonatomic) NSDate *lastUpdateTime;
+@property (assign, nonatomic) CGPoint cursorLocation;
 
 @end
